@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 
@@ -19,7 +18,7 @@ const Navbar = () => {
 
   const handleWaitlistClick = (e: React.MouseEvent) => {
     e.preventDefault();
-    window.open('https://flying-bramble-4ef.notion.site/1e7f4b9db627801da7cbfe871bb5129c?pvs=105', '_blank');
+    window.open('https://inaamyourmoney.notion.site/20710e25656b8102b835ca8c1e7fcfd5?pvs=105', '_blank');
   };
 
   return (
