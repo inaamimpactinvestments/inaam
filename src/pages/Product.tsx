@@ -17,7 +17,7 @@ const Product = () => {
             </section>
             
             <section>
-              <h2 className="text-2xl font-bold mb-4">Key Features</h2>
+              <h2 className="text-2xl font-semibold mb-4">Key Features</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="p-6 border border-gray-200 rounded-lg">
                   <h3 className="text-xl font-semibold mb-3">Simplified Interface</h3>
