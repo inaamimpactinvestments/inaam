@@ -51,7 +51,7 @@ const About = () => {
                 <div className="p-6 bg-gray-50 rounded-lg">
                   <h3 className="text-xl font-semibold mb-3">Impact</h3>
                   <p className="text-gray-600">
-                    Creating positive change in the world whilst building wealth for our users.
+                    Creating positive change in the world while building wealth for our users.
                   </p>
                 </div>
               </div>

@@ -15,7 +15,7 @@ const Product = () => {
               <h2 className="text-2xl font-semibold mb-4">Impact Investing Made Simple</h2>
               <p className="text-gray-600 text-lg leading-relaxed">
                 Our platform brings impact investing to your fingertips, making it accessible for everyone regardless of experience level. 
-                Invest in companies and funds that align with your values whilst building wealth for the future.
+                Invest in companies and funds that align with your values while building wealth for the future.
               </p>
             </section>
             

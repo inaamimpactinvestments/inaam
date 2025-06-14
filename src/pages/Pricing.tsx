@@ -32,7 +32,7 @@ const Pricing = () => {
                   <div className="p-8 border border-gray-200 rounded-lg text-centre">
                     <h3 className="text-2xl font-semibold mb-4">Early Access</h3>
                     <p className="text-gray-600 mb-6">
-                      Join our waitlist to be amongst the first to access inaam when we launch. 
+                      Join our waitlist to be among the first to access inaam when we launch. 
                       Early users will receive special pricing and exclusive features.
                     </p>
                     <div className="mb-6">

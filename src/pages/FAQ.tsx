@@ -5,7 +5,7 @@ const FAQ = () => {
   const faqs = [
     {
       question: "What is impact investing?",
-      answer: "Impact investing is an investment approach that seeks to generate positive, measurable social and environmental impact alongside a financial return. It's about making investments that align with your values whilst still building wealth."
+      answer: "Impact investing is an investment approach that seeks to generate positive, measurable social and environmental impact alongside a financial return. It's about making investments that align with your values while still building wealth."
     },
     {
       question: "How is inaam different from traditional investment platforms?",
@@ -25,11 +25,11 @@ const FAQ = () => {
     },
     {
       question: "Is impact investing as profitable as traditional investing?",
-      answer: "Impact investments can be competitive with traditional investments. Whilst some may offer slightly lower returns in exchange for positive impact, many impact investments perform as well as or better than conventional alternatives."
+      answer: "Impact investments can be competitive with traditional investments. While some may offer slightly lower returns in exchange for positive impact, many impact investments perform as well as or better than conventional alternatives."
     },
     {
       question: "When will inaam be available?",
-      answer: "We're currently in development and building our waitlist. Join our waitlist to be amongst the first to know when we launch and to receive early access to the platform."
+      answer: "We're currently in development and building our waitlist. Join our waitlist to be among the first to know when we launch and to receive early access to the platform."
     },
     {
       question: "Is my money safe with inaam?",
