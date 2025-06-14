@@ -1,11 +1,8 @@
-
 import Navbar from '@/components/Navbar';
 import SimpleMailchimpForm from '@/components/SimpleMailchimpForm';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-
 const Pricing = () => {
-  return (
-    <div className="min-h-screen flex flex-col">
+  return <div className="min-h-screen flex flex-col">
       <Navbar />
       
       <main className="flex-1 pt-32 pb-20 px-6 md:px-10">
@@ -45,7 +42,7 @@ const Pricing = () => {
                 
                 <TabsContent value="full" className="mt-6">
                   <div className="p-8 border border-gray-200 rounded-lg text-center">
-                    <h3 className="text-2xl font-bold mb-4">Full Access</h3>
+                    <h3 className="text-2xl font-semibold mb-4">Full Access</h3>
                     <p className="text-gray-600 mb-6">
                       Complete access to all inaam features including advanced portfolio management, 
                       detailed impact reporting, and premium investment opportunities.
@@ -97,8 +94,6 @@ const Pricing = () => {
           </div>
         </div>
       </main>
-    </div>
-  );
+    </div>;
 };
-
 export default Pricing;
