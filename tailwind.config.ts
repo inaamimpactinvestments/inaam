@@ -20,8 +20,9 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				filson: ["'Filson Soft'", 'sans-serif'],
+				fredoka: ["'Fredoka'", 'sans-serif'],
 				inter: ["'Inter'", 'sans-serif'],
+				mono: ["'Chivo Mono'", 'monospace'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',

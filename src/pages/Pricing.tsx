@@ -1,6 +1,7 @@
 
 import Navbar from '@/components/Navbar';
 import SimpleMailchimpForm from '@/components/SimpleMailchimpForm';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 const Pricing = () => {
   return (
@@ -20,19 +21,48 @@ const Pricing = () => {
               </p>
             </section>
             
-            <section className="max-w-2xl mx-auto">
-              <div className="p-8 border border-gray-200 rounded-lg text-center">
-                <h3 className="text-2xl font-bold mb-4">Early Access</h3>
-                <p className="text-gray-600 mb-6">
-                  Join our waitlist to be among the first to access inaam when we launch. 
-                  Early users will receive special pricing and exclusive features.
-                </p>
-                <div className="mb-6">
-                  <span className="text-4xl font-bold">Free</span>
-                  <span className="text-gray-500 ml-2">during beta</span>
-                </div>
-                <SimpleMailchimpForm />
-              </div>
+            <section className="max-w-3xl mx-auto">
+              <Tabs defaultValue="beta" className="w-full">
+                <TabsList className="grid w-full grid-cols-2">
+                  <TabsTrigger value="beta">Beta Access</TabsTrigger>
+                  <TabsTrigger value="full">Full Access</TabsTrigger>
+                </TabsList>
+                
+                <TabsContent value="beta" className="mt-6">
+                  <div className="p-8 border border-gray-200 rounded-lg text-center">
+                    <h3 className="text-2xl font-bold mb-4">Early Access</h3>
+                    <p className="text-gray-600 mb-6">
+                      Join our waitlist to be among the first to access inaam when we launch. 
+                      Early users will receive special pricing and exclusive features.
+                    </p>
+                    <div className="mb-6">
+                      <span className="text-4xl font-bold font-mono">Free</span>
+                      <span className="text-gray-500 ml-2">during beta</span>
+                    </div>
+                    <SimpleMailchimpForm />
+                  </div>
+                </TabsContent>
+                
+                <TabsContent value="full" className="mt-6">
+                  <div className="p-8 border border-gray-200 rounded-lg text-center">
+                    <h3 className="text-2xl font-bold mb-4">Full Access</h3>
+                    <p className="text-gray-600 mb-6">
+                      Complete access to all inaam features including advanced portfolio management, 
+                      detailed impact reporting, and premium investment opportunities.
+                    </p>
+                    <div className="mb-6">
+                      <span className="text-4xl font-bold font-mono">$10 AUD</span>
+                      <span className="text-gray-500 ml-2">per month</span>
+                    </div>
+                    <div className="mb-6 p-4 bg-gray-50 rounded-lg">
+                      <p className="text-sm text-gray-600">
+                        * Minimum investment of <span className="font-mono font-semibold">$10 AUD</span> required
+                      </p>
+                    </div>
+                    <SimpleMailchimpForm />
+                  </div>
+                </TabsContent>
+              </Tabs>
             </section>
             
             <section className="text-center">
