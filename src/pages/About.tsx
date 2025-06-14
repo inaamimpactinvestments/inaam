@@ -1,3 +1,4 @@
+
 import Navbar from '@/components/Navbar';
 
 const About = () => {
@@ -14,7 +15,7 @@ const About = () => {
               <h2 className="text-2xl font-semibold mb-4">Our Mission</h2>
               <p className="text-gray-600 text-lg leading-relaxed">
                 At inaam, we believe that everyone should have the opportunity to invest in a way that aligns 
-                with their values. Our mission is to democratize impact investing, making it accessible, 
+                with their values. Our mission is to democratise impact investing, making it accessible, 
                 simple, and transparent for all.
               </p>
             </section>
@@ -50,7 +51,7 @@ const About = () => {
                 <div className="p-6 bg-gray-50 rounded-lg">
                   <h3 className="text-xl font-semibold mb-3">Impact</h3>
                   <p className="text-gray-600">
-                    Creating positive change in the world while building wealth for our users.
+                    Creating positive change in the world whilst building wealth for our users.
                   </p>
                 </div>
               </div>

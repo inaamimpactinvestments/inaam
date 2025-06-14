@@ -1,10 +1,11 @@
+
 import Navbar from '@/components/Navbar';
 
 const FAQ = () => {
   const faqs = [
     {
       question: "What is impact investing?",
-      answer: "Impact investing is an investment approach that seeks to generate positive, measurable social and environmental impact alongside a financial return. It's about making investments that align with your values while still building wealth."
+      answer: "Impact investing is an investment approach that seeks to generate positive, measurable social and environmental impact alongside a financial return. It's about making investments that align with your values whilst still building wealth."
     },
     {
       question: "How is inaam different from traditional investment platforms?",
@@ -24,11 +25,11 @@ const FAQ = () => {
     },
     {
       question: "Is impact investing as profitable as traditional investing?",
-      answer: "Impact investments can be competitive with traditional investments. While some may offer slightly lower returns in exchange for positive impact, many impact investments perform as well as or better than conventional alternatives."
+      answer: "Impact investments can be competitive with traditional investments. Whilst some may offer slightly lower returns in exchange for positive impact, many impact investments perform as well as or better than conventional alternatives."
     },
     {
       question: "When will inaam be available?",
-      answer: "We're currently in development and building our waitlist. Join our waitlist to be among the first to know when we launch and to receive early access to the platform."
+      answer: "We're currently in development and building our waitlist. Join our waitlist to be amongst the first to know when we launch and to receive early access to the platform."
     },
     {
       question: "Is my money safe with inaam?",
@@ -53,14 +54,14 @@ const FAQ = () => {
             ))}
           </div>
           
-          <div className="mt-12 p-6 bg-gray-50 rounded-lg text-center">
+          <div className="mt-12 p-6 bg-gray-50 rounded-lg text-centre">
             <h3 className="text-xl font-semibold mb-3">Still have questions?</h3>
             <p className="text-gray-600 mb-4">
               We're here to help. Reach out to us and we'll get back to you as soon as possible.
             </p>
             <a 
               href="mailto:hello@inaam.com" 
-              className="inline-block bg-black text-white px-6 py-3 rounded-md hover:bg-gray-800 transition-colors"
+              className="inline-block bg-black text-white px-6 py-3 rounded-md hover:bg-gray-800 transition-colours"
             >
               Contact Us
             </a>
