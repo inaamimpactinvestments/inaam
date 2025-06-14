@@ -31,7 +31,7 @@ const Legals = () => {
       
       <main className="flex-1 pt-32 pb-20 px-6 md:px-10">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold mb-8">Legals and Disclaimers</h1>
+          <h1 className="text-4xl md:text-5xl font-semibold mb-8">Legals and Disclaimers</h1>
           
           <div className="space-y-8">
             <section>

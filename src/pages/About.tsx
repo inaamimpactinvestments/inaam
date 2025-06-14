@@ -1,4 +1,3 @@
-
 import Navbar from '@/components/Navbar';
 
 const About = () => {
@@ -8,11 +7,11 @@ const About = () => {
       
       <main className="flex-1 pt-32 pb-20 px-6 md:px-10">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold mb-8">About</h1>
+          <h1 className="text-4xl md:text-5xl font-semibold mb-8">About</h1>
           
           <div className="space-y-8">
             <section>
-              <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
+              <h2 className="text-2xl font-semibold mb-4">Our Mission</h2>
               <p className="text-gray-600 text-lg leading-relaxed">
                 At inaam, we believe that everyone should have the opportunity to invest in a way that aligns 
                 with their values. Our mission is to democratize impact investing, making it accessible, 
@@ -21,7 +20,7 @@ const About = () => {
             </section>
             
             <section>
-              <h2 className="text-2xl font-bold mb-4">Why inaam?</h2>
+              <h2 className="text-2xl font-semibold mb-4">Why inaam?</h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-6">
                 The word "inaam" means "gift" or "reward" in Arabic and Urdu. We chose this name because 
                 we believe that impact investing is both a gift to our planet and communities, and a reward 
@@ -58,7 +57,7 @@ const About = () => {
             </section>
             
             <section>
-              <h2 className="text-2xl font-bold mb-4">Our Vision</h2>
+              <h2 className="text-2xl font-semibold mb-4">Our Vision</h2>
               <p className="text-gray-600 text-lg leading-relaxed">
                 We envision a world where every investment decision considers not just financial returns, 
                 but also the impact on people and planet. Through technology and education, we're working 

@@ -1,6 +1,9 @@
+
 import Navbar from '@/components/Navbar';
+
 const Product = () => {
-  return <div className="min-h-screen flex flex-col">
+  return (
+    <div className="min-h-screen flex flex-col">
       <Navbar />
       
       <main className="flex-1 pt-32 pb-20 px-6 md:px-10">
@@ -48,6 +51,8 @@ const Product = () => {
           </div>
         </div>
       </main>
-    </div>;
+    </div>
+  );
 };
+
 export default Product;

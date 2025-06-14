@@ -1,17 +1,19 @@
 import Navbar from '@/components/Navbar';
 import SimpleMailchimpForm from '@/components/SimpleMailchimpForm';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+
 const Pricing = () => {
-  return <div className="min-h-screen flex flex-col">
+  return (
+    <div className="min-h-screen flex flex-col">
       <Navbar />
       
       <main className="flex-1 pt-32 pb-20 px-6 md:px-10">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">Pricing</h1>
+          <h1 className="text-4xl md:text-5xl font-semibold mb-8 text-center">Pricing</h1>
           
           <div className="space-y-8">
             <section className="text-center">
-              <h2 className="text-2xl font-bold mb-4">Simple, Transparent Pricing</h2>
+              <h2 className="text-2xl font-semibold mb-4">Simple, Transparent Pricing</h2>
               <p className="text-gray-600 text-lg leading-relaxed">
                 We believe in keeping things simple. Our pricing structure is designed to be transparent 
                 and fair, so you always know what you're paying for.
@@ -27,7 +29,7 @@ const Pricing = () => {
                 
                 <TabsContent value="beta" className="mt-6">
                   <div className="p-8 border border-gray-200 rounded-lg text-center">
-                    <h3 className="text-2xl font-bold mb-4">Early Access</h3>
+                    <h3 className="text-2xl font-semibold mb-4">Early Access</h3>
                     <p className="text-gray-600 mb-6">
                       Join our waitlist to be among the first to access inaam when we launch. 
                       Early users will receive special pricing and exclusive features.
@@ -94,6 +96,8 @@ const Pricing = () => {
           </div>
         </div>
       </main>
-    </div>;
+    </div>
+  );
 };
+
 export default Pricing;

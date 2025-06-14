@@ -34,7 +34,8 @@ const Home = () => {
       clearTimeout(timer);
     };
   }, []);
-  return <div className="min-h-screen flex flex-col">
+  return (
+    <div className="min-h-screen flex flex-col">
       <Navbar />
       
       <main className="flex-1 pt-32 pb-20 px-6 md:px-10 relative">
@@ -72,7 +73,7 @@ const Home = () => {
                     <path d="M12 8H12.01" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-semibold ">Simplified</h3>
+                <h3 className="text-2xl font-semibold">Simplified</h3>
                 <p className="text-gray-600">
                   Investment made accessible for everyone, regardless of your experience level.
                 </p>
@@ -84,7 +85,7 @@ const Home = () => {
                     <path d="M17 8L21 12M21 12L17 16M21 12H3" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold">Impactful</h3>
+                <h3 className="text-2xl font-semibold">Impactful</h3>
                 <p className="text-gray-600">
                   Make investments that align with your values and create positive change.
                 </p>
@@ -100,7 +101,7 @@ const Home = () => {
                     <path d="M17 20V11" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-semibold ">Growth</h3>
+                <h3 className="text-2xl font-semibold">Growth</h3>
                 <p className="text-gray-600">
                   Smart investment strategies designed to help your money grow over time.
                 </p>
@@ -111,7 +112,7 @@ const Home = () => {
           {/* Call to Action */}
           <section className="py-16 md:py-24 text-center">
             <div className="max-w-3xl mx-auto space-y-6">
-              <h2 className="text-3xl md:text-4xl font-semibold font-bold opacity-100 ">
+              <h2 className="text-3xl md:text-4xl font-semibold opacity-100">
                 Join our waitlist today
               </h2>
               <p className="text-gray-600 text-lg animate-on-scroll opacity-0">
@@ -142,6 +143,8 @@ const Home = () => {
           </div>
         </div>
       </footer>
-    </div>;
+    </div>
+  );
 };
+
 export default Home;

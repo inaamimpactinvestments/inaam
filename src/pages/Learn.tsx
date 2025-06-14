@@ -1,4 +1,3 @@
-
 import Navbar from '@/components/Navbar';
 
 const Learn = () => {
@@ -8,11 +7,11 @@ const Learn = () => {
       
       <main className="flex-1 pt-32 pb-20 px-6 md:px-10">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold mb-8">Learn</h1>
+          <h1 className="text-4xl md:text-5xl font-semibold mb-8">Learn</h1>
           
           <div className="space-y-8">
             <section>
-              <h2 className="text-2xl font-bold mb-4">Understanding Impact Investing</h2>
+              <h2 className="text-2xl font-semibold mb-4">Understanding Impact Investing</h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-6">
                 Impact investing is an investment approach that seeks to generate positive, measurable social and environmental 
                 impact alongside a financial return. Learn the fundamentals and start your journey today.
@@ -20,7 +19,7 @@ const Learn = () => {
             </section>
             
             <section>
-              <h2 className="text-2xl font-bold mb-6">Learning Resources</h2>
+              <h2 className="text-2xl font-semibold mb-6">Learning Resources</h2>
               <div className="space-y-6">
                 <div className="p-6 border border-gray-200 rounded-lg">
                   <h3 className="text-xl font-semibold mb-3">Getting Started Guide</h3>
