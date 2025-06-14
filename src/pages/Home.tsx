@@ -100,7 +100,7 @@ const Home = () => {
                     <path d="M17 20V11" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold">Growth</h3>
+                <h3 className="text-2xl font-semibold ">Growth</h3>
                 <p className="text-gray-600">
                   Smart investment strategies designed to help your money grow over time.
                 </p>
