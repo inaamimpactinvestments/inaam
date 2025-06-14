@@ -1,8 +1,6 @@
-
 import { useEffect, useState } from 'react';
 import Navbar from '@/components/Navbar';
 import SimpleMailchimpForm from '@/components/SimpleMailchimpForm';
-
 const Home = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -14,35 +12,29 @@ const Home = () => {
     }, 100);
 
     // Set up intersection observer for scroll animations after initial load
-    document.querySelectorAll('.animate-on-scroll').forEach((el) => {
+    document.querySelectorAll('.animate-on-scroll').forEach(el => {
       el.classList.add('opacity-0');
     });
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.remove('opacity-0');
-            entry.target.classList.add('animate-fade-up');
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    document.querySelectorAll('.animate-on-scroll').forEach((el) => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove('opacity-0');
+          entry.target.classList.add('animate-fade-up');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+    document.querySelectorAll('.animate-on-scroll').forEach(el => {
       observer.observe(el);
     });
-
     return () => {
       observer.disconnect();
       clearTimeout(timer);
-    }
+    };
   }, []);
-
-  return (
-    <div className="min-h-screen flex flex-col">
+  return <div className="min-h-screen flex flex-col">
       <Navbar />
       
       <main className="flex-1 pt-32 pb-20 px-6 md:px-10 relative">
@@ -75,12 +67,12 @@ const Home = () => {
               <div className="animate-on-scroll opacity-0 space-y-4">
                 <div className="w-12 h-12 flex items-center justify-center rounded-full bg-black">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M12 16V12" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M12 8H12.01" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M12 16V12" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M12 8H12.01" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold">Simplified</h3>
+                <h3 className="text-2xl font-semibold ">Simplified</h3>
                 <p className="text-gray-600">
                   Investment made accessible for everyone, regardless of your experience level.
                 </p>
@@ -89,7 +81,7 @@ const Home = () => {
               <div className="animate-on-scroll opacity-0 space-y-4">
                 <div className="w-12 h-12 flex items-center justify-center rounded-full bg-black">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17 8L21 12M21 12L17 16M21 12H3" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M17 8L21 12M21 12L17 16M21 12H3" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold">Impactful</h3>
@@ -101,11 +93,11 @@ const Home = () => {
               <div className="animate-on-scroll opacity-0 space-y-4">
                 <div className="w-12 h-12 flex items-center justify-center rounded-full bg-black">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2 20H22" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M5 20V13" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M9 20V9" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M13 20V4" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M17 20V11" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M2 20H22" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M5 20V13" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M9 20V9" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M13 20V4" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M17 20V11" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold">Growth</h3>
@@ -137,17 +129,10 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-6 md:px-10">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
-              <img 
-                src="/lovable-uploads/0a23badb-d7a6-419a-89ce-8103e50caea0.png" 
-                alt="inaam" 
-                className="h-6"
-              />
+              <img src="/lovable-uploads/0a23badb-d7a6-419a-89ce-8103e50caea0.png" alt="inaam" className="h-6" />
             </div>
             <div className="flex flex-col md:flex-row items-center gap-4">
-              <a 
-                href="/legals" 
-                className="text-gray-500 text-sm hover:text-gray-700 transition-colors"
-              >
+              <a href="/legals" className="text-gray-500 text-sm hover:text-gray-700 transition-colors">
                 Legals and Disclaimers
               </a>
               <p className="text-gray-500 text-sm">
@@ -157,8 +142,6 @@ const Home = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Home;
