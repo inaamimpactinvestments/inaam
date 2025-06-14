@@ -1,5 +1,14 @@
+
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { ChevronDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -38,25 +47,56 @@ const Navbar = () => {
         <div className="absolute inset-0 z-0 apple-menu-border-animation rounded-full"></div>
         
         <div className="flex items-center justify-between relative z-10">
-          <a href="/" className="flex items-center transition-opacity duration-300">
+          <Link to="/home" className="flex items-center transition-opacity duration-300">
             <img 
               src="/lovable-uploads/0a23badb-d7a6-419a-89ce-8103e50caea0.png" 
               alt="inaam" 
               className="h-8 md:h-10 transition-all duration-300 ease-in-out"
             />
-          </a>
-          <nav className="hidden md:block">
-            <ul className="flex space-x-8">
-              <li>
-                <a 
-                  href="#"
-                  onClick={handleWaitlistClick}
-                  className="transition-colors font-inter text-sm font-medium text-[#222222] cursor-pointer"
-                >
-                  Join Waitlist
-                </a>
-              </li>
-            </ul>
+          </Link>
+          
+          <nav className="hidden md:flex items-center space-x-6">
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center space-x-1 transition-colors font-inter text-sm font-medium text-[#222222] hover:text-gray-600">
+                <span>Menu</span>
+                <ChevronDown className="h-4 w-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="bg-white border border-gray-200 shadow-lg rounded-md">
+                <DropdownMenuItem asChild>
+                  <Link to="/product" className="w-full px-3 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    Product
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/learn" className="w-full px-3 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    Learn
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/pricing" className="w-full px-3 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    Pricing
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/about" className="w-full px-3 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    About
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/faq" className="w-full px-3 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    FAQ
+                  </Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+            
+            <a 
+              href="#"
+              onClick={handleWaitlistClick}
+              className="transition-colors font-inter text-sm font-medium text-[#222222] hover:text-gray-600 cursor-pointer"
+            >
+              Join Waitlist
+            </a>
           </nav>
         </div>
       </div>
