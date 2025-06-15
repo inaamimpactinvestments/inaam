@@ -1,10 +1,7 @@
-
 import Navbar from '@/components/Navbar';
 import { Button } from '@/components/ui/button';
-
 const About = () => {
-  return (
-    <div className="min-h-screen flex flex-col">
+  return <div className="min-h-screen flex flex-col">
       <Navbar />
       
       <main className="flex-1 pt-32 pb-20 px-6 md:px-10">
@@ -59,7 +56,7 @@ const About = () => {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-6">inaam Founder: Arjun Agarwal</h2>
+              <h2 className="text-2xl font-semibold mb-6">Our Founder - Arjun Agarwal</h2>
               <div className="flex justify-center">
                 <div className="w-64 h-96 bg-gray-100 rounded-lg border-2 border-dashed border-gray-300 flex items-center justify-center">
                   <p className="text-gray-500 text-center">
@@ -89,8 +86,6 @@ const About = () => {
           </div>
         </div>
       </main>
-    </div>
-  );
+    </div>;
 };
-
 export default About;
