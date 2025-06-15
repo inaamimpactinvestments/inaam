@@ -5,7 +5,7 @@ const Legals = () => {
   const legalSections = [
     {
       title: "Financial Services Guide",
-      content: "Information about our financial services, including our authorisation, the services we provide, how we're remunerated, and our internal and external dispute resolution procedures."
+      content: "Information about our financial services, including our authorization, the services we provide, how we're remunerated, and our internal and external dispute resolution procedures."
     },
     {
       title: "Privacy Policy", 

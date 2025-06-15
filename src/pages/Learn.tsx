@@ -1,4 +1,3 @@
-
 import Navbar from '@/components/Navbar';
 
 const Learn = () => {
@@ -51,7 +50,7 @@ const Learn = () => {
                 <div className="p-6 border border-gray-200 rounded-lg">
                   <h3 className="text-xl font-semibold mb-3">Case Studies</h3>
                   <p className="text-gray-600 mb-4">
-                    Real-world examples of successful impact investments and the lessons learnt from them.
+                    Real-world examples of successful impact investments and the lessons learned from them.
                   </p>
                   <span className="text-sm text-gray-500">Coming Soon</span>
                 </div>

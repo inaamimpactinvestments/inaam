@@ -43,7 +43,7 @@ const Product = () => {
                 <div className="p-6 border border-gray-200 rounded-lg">
                   <h3 className="text-xl font-semibold mb-3">Mobile First</h3>
                   <p className="text-gray-600">
-                    Manage your portfolio on the go with our mobile-optimised platform.
+                    Manage your portfolio on the go with our mobile-optimized platform.
                   </p>
                 </div>
               </div>

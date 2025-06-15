@@ -1,4 +1,3 @@
-
 import Navbar from '@/components/Navbar';
 
 const FAQ = () => {
@@ -54,14 +53,14 @@ const FAQ = () => {
             ))}
           </div>
           
-          <div className="mt-12 p-6 bg-gray-50 rounded-lg text-centre">
+          <div className="mt-12 p-6 bg-gray-50 rounded-lg text-center">
             <h3 className="text-xl font-semibold mb-3">Still have questions?</h3>
             <p className="text-gray-600 mb-4">
               We're here to help. Reach out to us and we'll get back to you as soon as possible.
             </p>
             <a 
               href="mailto:hello@inaam.com" 
-              className="inline-block bg-black text-white px-6 py-3 rounded-md hover:bg-gray-800 transition-colours"
+              className="inline-block bg-black text-white px-6 py-3 rounded-md hover:bg-gray-800 transition-colors"
             >
               Contact Us
             </a>
