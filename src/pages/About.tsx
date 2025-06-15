@@ -1,4 +1,6 @@
+
 import Navbar from '@/components/Navbar';
+import { Button } from '@/components/ui/button';
 
 const About = () => {
   return (
@@ -14,7 +16,7 @@ const About = () => {
               <h2 className="text-2xl font-semibold mb-4">Our Mission</h2>
               <p className="text-gray-600 text-lg leading-relaxed">
                 At inaam, we believe that everyone should have the opportunity to invest in a way that aligns 
-                with their values. Our mission is to democratize impact investing, making it accessible, 
+                with their values. Our mission is to democratise impact investing, making it accessible, 
                 simple, and transparent for all.
               </p>
             </section>
@@ -55,6 +57,18 @@ const About = () => {
                 </div>
               </div>
             </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold mb-6">inaam Founder: Arjun Agarwal</h2>
+              <div className="flex justify-center">
+                <div className="w-64 h-96 bg-gray-100 rounded-lg border-2 border-dashed border-gray-300 flex items-center justify-center">
+                  <p className="text-gray-500 text-center">
+                    Vertical Video<br />
+                    (9:16 aspect ratio)
+                  </p>
+                </div>
+              </div>
+            </section>
             
             <section>
               <h2 className="text-2xl font-semibold mb-4">Our Vision</h2>
@@ -63,6 +77,14 @@ const About = () => {
                 but also the impact on people and planet. Through technology and education, we're working 
                 to make this vision a reality.
               </p>
+            </section>
+
+            <section className="pt-8 text-center">
+              <Button asChild size="lg" className="bg-black text-white hover:bg-gray-800">
+                <a href="mailto:arj@inaam.me">
+                  Work with Us
+                </a>
+              </Button>
             </section>
           </div>
         </div>
